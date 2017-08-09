@@ -262,7 +262,7 @@
 
     </dependencies>
     <build>
-        <finalName>spring4.x-mybatis3.x</finalName>
+        <finalName>spring4.x</finalName>
         <resources>
             <resource>
                 <directory>src/main/java</directory>
