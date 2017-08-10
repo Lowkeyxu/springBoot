@@ -136,13 +136,14 @@ public class HttpClientUtil {
         HttpClient httpClient = new HttpClient();
         httpClient.getParams().setContentCharset("UTF-8");
         // 2.构造PostMethod的实例
-        GetMethod getMethod = new GetMethod(url);
+        PostMethod postMethod = new PostMethod(url);
         // 3.把参数值放入到PostMethod对象中
         try {
             // 4.执行postMethod,调用http接口
-            httpClient.executeMethod(getMethod);// 200
+            httpClient.executeMethod(postMethod);// 200
             // 5.读取内容
-            responseMsg = getMethod.getResponseBodyAsString().trim();
+            responseMsg = postMethod.getResponseBodyAsString().trim();
+            log.debug(responseMsg);
             // 6.处理返回的内容
         } catch (HttpException e) {
             e.printStackTrace();
@@ -150,7 +151,7 @@ public class HttpClientUtil {
             e.printStackTrace();
         } finally {
             // 7.释放连接
-            getMethod.releaseConnection();
+            postMethod.releaseConnection();
         }
         return responseMsg;
     }
