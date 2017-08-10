@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.headtop{ width:100%; height:40px; background:#f7f7f7;}
+.headtop ul{ float:right;}
+.headtop ul li{ float:left; width:auto; position:relative; }
+.headtop ul li .son_box{ position:absolute; top:40px; width:100%; background:#fff; z-index:9999999; left:0px; box-shadow:0px 1px 1px 0px #eee; border:1px solid #eee; border-top:none; display:none; padding-bottom:10px;}
+.headtop ul li .son_box_m{ width:270px;}
+.headtop ul li .son_box_m dl{ padding:20px;}
+.headtop ul li .son_box_m dl dt img{ float:left; display:inline-block; width:78px; height:78px; border:1px solid #f5f5f5; border-radius:78px; margin-right:10px;}
+.headtop ul li .son_box_m dl dt img.son_img{ width:18px; height:18px; border-radius:18px; display:inline-block; margin-top:29px;}
+.headtop ul li .son_box_m dl dt span a{ display:inline-block; float:right; width: 140px;}
+.headtop ul li .son_box_m dl dt{ line-height:78px; color:#5c5c5c; font-size:16px; height: 79px; overflow: hidden;}
+.headtop ul li .son_box_m dl dd{ width:96px; float:left; height:30px; line-height:30px;  margin-left:10px; font-size:14px;}
+.headtop ul li.show h6{background:#fff; }
+.headtop ul li.show .son_box{ display:block;}
+.headtop ul li h6{ width:auto; height:40px; line-height:40px; text-align:center; padding:0px 20px;  }
+.headtop ul li h6 a{ color:#666666; font-weight:normal; }
+.headtop ul li.show h6 a{ color:#aa2020;}
+.headtop ul li .box_con{ padding:10px;}
+.headtop ul li .box_con ul{ width:100%; float:none; }
+.headtop ul li .box_con ul li{ width:100px;line-height:30px; text-align:left; padding:0px 10px; font-size:14px; }
+
+.headtop ul li.s{padding-right:17px;}
+.headtop ul li.s h6{ background:url(../images/Arrow_b.png) right center no-repeat; text-align:left; text-indent:0.4em; padding:0px 10px; }
+.headtop ul li.s h6 a{display:inline-block; margin-right:10px;}
+.headtop ul li.show h6{ background-image:url(../images/Arrow_t.png) }
+.headtop ul li.show{ background:#fff;}
+.headtop p.fl{ line-height:40px; font-size:12px;}
+.headtop p.fl a,.headtop p.fl em{ color:#666; display:inline-block; margin-left:10px; font-style:normal;}
+.headtop p.fl a.mobile{ background:url(../images/mobile.png) left center no-repeat; text-indent:0.9em;}
+.headtop p.fl a:hover{ color:#dbad5a;}
+.topnav{ }
+
+
+
+.nav ul li{ float:left; font-size:16px; width:auto; text-align:center; height:50px; line-height:50px; padding:0px 20px;}
+.nav{ margin-left:50px; height:50px; line-height:50px;}
+.logo{ float:left; width:120px;}
+.nav ul li.cur a{ color:#aa2020;}
+.bg_f{ background:#fff;}
+.hr20{ height:20px;}
+.hr10{ height:10px;}
+
+
+.logo{ width:240px; margin-top:20px;}
+.topsearch ul li{ float:left; font-size:12px; margin:5px;}
+.topsearch ul li a.cur{ color:#cb9547;}
+.topsearch p a{ font-size:12px; display:inline-block; margin:0px 10px;}
+.topsearch ul li.line{ padding:0px; height:11px; width:1px; background:#bbbbbb; margin-top:10px;}
+.search_box{ width:632px; border:2px solid #14181b; position:relative;}
+.search_box a{left:10px;}/*针对IE8下面的placeholder变形bug*/
+.search_box,.search_box input,.search_box button{ height:34px; line-height:34px; display:block; margin:0px; padding:0px; outline:none;}
+.search_box input{ width:580px; padding:5px; height:24px; line-height:24px;}
+.search_box button{ width:40px; border:none; float:right; cursor:pointer; background:#14181b url(../images/ss.png) center no-repeat;}
+.release{ border:none; width:125px; height:34px; border:1px solid #14181b; background:#fff url(../images/fb.png) 90px center no-repeat; text-align:left; text-indent:1.2em; cursor:pointer; margin-top:30px;}
+.release:hover{ background:#14181b url(../images/fb.png) 90px center no-repeat; ; color:#fff;}
+.footer_top{ padding:20px 0px; }
+.footer{ width:100%; background:#f9f9f9;}
+.footer_top .h6{ font-size:30px; color:#5c5c5c;}
+.footer_top .fl p{ font-size:12px; color:#a8a8a8;}
+.footer_top .fr dl{ padding-right:20px; width:180px; float:left; text-align:center;}
+.footer_top .fr dl dt,.footer_top .fr dl dd{ }
+.footer_top .fr dl dt{ font-size:14px; color:#5c5c5c; padding-bottom:10px;}
+.footer_top .fr dl dd{ font-size:14px; color:#a8a8a8; height:30px; line-height:30px;}
+.footer_top .fr dl dd a{ color:#666;}
+.footer_top .fr dl dd a:hover{ color:#aa2020;}
+.footer_bottom{ width:100%; background:#f2f2f2; padding:29px 0px; text-align:center; padding-bottom:20px;}
+.footer_nav{ display:inline-block; width:auto; margin:0px auto; height:40px; line-height:40px;}
+.footer_nav a,.footer_nav em{ display:inline-block;}
+.footer_nav a{ margin:0px 10px; color:#666; font-size:14px;}
+.footer_nav em{ width:1px; height:12px; background:#666;}
+.footer_bottom p{ color:#bbb; text-align:center; width:100%; padding-top:10px; font-size:12px;}
+
+
+.body_right{ position:fixed; right:20px; top:45%; z-index:99;}
+.body_right ul li,.body_right ul li a{width:36px; height:36px; }
+.body_right ul li{margin-top:5px;}
+
+.body_right ul li a{ display:block; border-radius:2px; background:#14181b;}
+.body_right ul li a span{ background:url(../images/body_right.png) no-repeat 0px 0px; display:block; width:18px; height:16px; margin:0px auto; top:7px;position:relative;}
+.body_right ul li a:hover{background-color:#dbad5a;}
+.body_right ul li a:hover span{ background-position:0px -16px; }
+.body_right ul li.service a span{ background-position:0px -32px; top:10px;}
+.body_right ul li.service a:hover span{ background-position:0px -50px;}
+.body_right ul li.letter a span{ background-position:0px -86px; top:10px;}
+.body_right ul li.letter a:hover span{ background-position:0px -69px;}
+.body_right ul li.return a span{ background-position:0px -103px; top:11px;}
+.body_right ul li.return a:hover span{ background-position:0px -119px;}
+
+.left_more{ width:100%; height:39px; line-height:39px; background:#ccc url(../images/fl_jt.png)130px center no-repeat; margin-top:23px; text-indent:3.3em;}
+.left_more a{ font-size:12px; font-weight:normal; width:100%; height:39px; color:#818181;}
+.left_more a:hover{ color:#d7b24e; text-decoration:underline;}
+.left_more_cur{ background-image:url(../images/fl_jt_bottom.png);}
+
+
+.hq_nav{/* position:relative; */z-index:999; width:100%; margin:0 auto; height:38px; background:#3f4245;}
+.hq_nav_b { height:38px; line-height:38px; width:1200px; margin: auto;}
+.hq_nav_b em { display:inline-block; float:left; width:227px; height:38px; margin-right:10px; background:#14181b url(../images/menu.png) no-repeat 20px center;font-size:16px; color:#ffde86; text-align:center; font-family:"微软雅黑"; font-style:normal;}
+.hq_nav_b ul{ float:left;}
+.hq_nav_b ul li{ float:left;height:40px; text-align:center; width:120px;}
+.hq_nav_b ul li a{display: block;color:#fff; font-size:16px; text-align:center; text-decoration:none; font-family:"微软雅黑";}
+.hq_nav_b ul li .nav_over{ display:inline-block; vertical-align:middle; text-align:center; font-size:16px; color:#dbad5a; height:32px; line-height:32px;width:90px;}
+.hq_nav_b ul li .nav_over{ border-bottom:2px solid #dbad5a;}
+.line{ color:#ddd;}
+.nav_left{ position:absolute; z-index:999;}
+
+
+.body_left{ position:fixed; top:38%; z-index:99; left:20px; width:44px; line-height:14px; background:#918888; font-size:12px; text-align:center; color:#fff;}
+.body_left li{ width:34px; height:28px; padding:10px 5px; border-bottom:1px solid #b1aaaa; cursor:pointer;}
+.body_left li:hover,.body_left li.cur{ background:#dbad5a;}
+.body_left li.up{ background:#757373;}
+.lift_btn_arrow {
+    display: block;
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #757373 #757373 #fff;
+}
+.service_qq{ display:none; width:90px; height:auto; min-height:200px; background:#dbad5a; padding:10px; position:absolute; right:44px; top:-10px; border-radius:3px;}
+.body_right ul li{ position:relative; }
+.body_right ul li:hover .service_qq{ display:block; }
+.body_right ul li i{ display:block; position:absolute; right:-10px; top:20px;}
+.service_qq em{ display:block; width:100%; height:40px; line-height:40px; color:#fff; background:url(../images/QQ.png) left center no-repeat; font-style:normal; text-indent:2em; font-size:13px; cursor:pointer;}
+.service_qq em.t{ background-image:url(../images/QQ_t.png);}

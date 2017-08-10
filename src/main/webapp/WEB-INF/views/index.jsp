@@ -15,7 +15,7 @@
     <meta name="generator" content="PieCrust 2.0.0rc2+23.70f722a1f447.20170111" />
     <meta name="description" content="PieCrust, a simple website engine and static website generator" />
 
-    <title>PieCrust &mdash; PieCrust</title>
+    <title>PieCrust</title>
 
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
 

@@ -1,0 +1,290 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*登录页*/
+.top{ width:1200px; margin:0 auto; height:95px;}
+.top ul{ float:right;}
+.top ul li{ float:left; width:100px; position:relative; }
+.top ul li .son_box{ position:absolute; top:40px; width:100%; background:#fff; z-index:9999999; left:0px; box-shadow:0px 1px 1px 0px #eee; border:1px solid #eee; border-top:none; display:none; padding-bottom:10px;}
+.top ul li .son_box_m{ width:270px;}
+.top ul li .son_box_m dl{ padding:20px;}
+.top ul li .son_box_m dl dt img{ float:left; display:inline-block; width:78px; height:78px; border:1px solid #f5f5f5; border-radius:78px; margin-right:10px;}
+.top ul li .son_box_m dl dt img.son_img{ width:18px; height:18px; border-radius:18px; display:inline-block; margin-top:29px;}
+.top ul li .son_box_m dl dt span a{ display:inline-block; float:right; width: 140px;}
+.top ul li .son_box_m dl dt{ line-height:78px; color:#5c5c5c; font-size:16px; height: 79px; overflow: hidden;}
+.top ul li .son_box_m dl dd{ width:96px; float:left; height:30px; line-height:30px;  margin-left:10px; font-size:14px;}
+.top ul li.show h6{background:#fff; }
+.top ul li.show .son_box{ display:block;}
+.top ul li h6{ width:100%; height:40px; line-height:40px; text-align:center;}
+.top ul li h6 a{ color:#666666; font-weight:normal;}
+.top ul li.show h6 a{ color:#aa2020;}
+.top ul li .box_con{ padding:10px;}
+.top ul li .box_con ul{ width:100%; float:none; }
+.top ul li .box_con ul li{ width:100px;line-height:30px; text-align:left; padding:0px 10px; font-size:14px;}
+.top ul li.s h6{ background:url(../images/Arrow_b.png) 80px center no-repeat; text-align:left; text-indent:1em;}
+.top ul li.show h6{ background:#fff url(../images/Arrow_t.png) 90px center no-repeat; }
+.top p.fl{ line-height:40px; font-size:12px;}
+.top p.fl a,.top p.fl em{ color:#666; display:inline-block; margin-left:10px; font-style:normal;}
+.top p.fl a.mobile{ background:url(../images/mobile.png) left center no-repeat; text-indent:0.9em;}
+.top p.fl a:hover{ color:#dbad5a;}
+
+
+
+.top-left{ float:left; height:95px;}
+.top-left h1{ float:left; margin-top:17px; width:174px; height:56px;}
+.top-left h1 a img{ display:block; }
+.top-right{ float:right; height:68px; padding-top:27px;}
+.top-right dl{ float:right; width:250px; height:68px;}
+.top-right dl dt{ float:left; width:28px; height:28px;}
+.top-right dl dt img{ display:block; width:28px; height:28px;}
+.top-right dl dd{ float:right; font-size:16px; color:#14351c;}
+.top-right dl dd.time{ float:right; font-size:14px; color:#999794; margin-top:5px; }
+.main{ width:1200px; height:465px; margin:0 auto; margin-bottom:65px;}
+.main-left{ float:left; width:757px; height:auto;}
+.main-left h2{ float:left;}
+.main-left h2 a img{ width:757px; height:465px; display:block;}
+.main-right{ float:right; width:383px; margin-right:10px;}
+.login-top{ position:relative; width:100%; height:93px;}
+.login-top h3{ font-size:20px; color:#14351c; font-weight:normal; line-height:93px; float:left;}
+.login-top i{ position:absolute; z-index:999; top:10px; right:70px;}
+.login-top i img{ width:129px; height:24px;}
+.login-top a{ position:absolute; z-index:999; top:10px; right:0;}
+.login-top a.second{ position:absolute; z-index:99999; top:48px; right:38px; font-size:14px; color:#0987d4;}
+.login-input{ width:100%; height:auto; }
+.login-input,.login-input{position:relative;}
+.login-input i,.login-input i{ position:absolute; top:10px; left:15px;}
+input.name{ width:288px; height:38px; border:1px solid #959595; font-size:14px; color:#999794; padding-left:55px; line-height:38px;}
+input.keyword{width:288px; height:38px; border:1px solid #959595;  font-size:14px; color:#999794; padding-left:55px;  line-height:38px;}
+.login-code{ margin-top:15px; width:343px; height:40px; margin-bottom:34px;}
+input.code1{ float:left;width:140px; height:38px; border:1px solid #959595;font-size:14px; color:#999794; padding-left:10px; line-height:38px;}
+.login-code img{ float:left; display:block; width:113px; height:42px; margin-left:20px;}
+.login-code a{ font-size:12px; color:#f20000; float:right; margin-top:15px;}
+.login-button{ width:343px; height:43px; margin-bottom:30px;}
+input.login{ width:343px; height:43px; background:#14181b; font-size:18px; color:#ffde86; border-radius:5px; text-align:center; cursor:pointer;}
+.login-remember{ width:343px; height:20px; margin-bottom:40px;}
+input.remember{ float:left; margin-top:4px;}
+.login-remember span{ float:left; margin-left:10px; font-size:14px; color:#666;}
+.login-remember a{ font-size:14px; color:#666; float:right;}
+.notice{ width:100%;}
+.notice a{ font-size:14px; color:#666;}
+
+/*微信登录页*/
+.top{ width:1200px; margin:0 auto; height:95px;}
+.top-left{ float:left; height:95px;}
+.top-left h1{ float:left; margin-top:17px; width:174px; height:56px;}
+.top-left h1 a img{ display:block; }
+.top-right{ float:right; height:68px; padding-top:27px;}
+.top-right dl{ float:right; width:250px; height:68px;}
+.top-right dl dt{ float:left; width:28px; height:28px;}
+.top-right dl dt img{ display:block; width:28px; height:28px;}
+.top-right dl dd{ float:right; font-size:16px; color:#14351c;}
+.top-right dl dd.time{ float:right; font-size:14px; color:#999794; margin-top:5px; }
+.main{ width:1200px; height:465px; margin:0 auto; margin-bottom:65px;}
+.main-left{ float:left; width:757px; height:auto;}
+.main-left h2{ float:left;}
+.main-left h2 a img{ width:757px; height:465px; display:block;}
+.main-right{ float:right; width:383px; margin-right:10px;}
+.login-top{ position:relative; width:100%; height:93px;}
+.login-top h3.sweep{ font-size:20px; color:#14351c; font-weight:normal; line-height:93px; float:left; margin-top:28px; margin-bottom:28px;}
+.login-top i{ position:absolute; z-index:999; top:10px; right:70px;}
+.login-top i img{ width:129px; height:24px;}
+.login-top a{ position:absolute; z-index:999; top:10px; right:0;}
+.code-box{ width:116px; height:116px; margin:0 auto; margin-top:40px; margin-bottom:55px;}
+.code-box i img{ width:116px; height:116px;}
+.main-right dl{ width:170px; height:49px; margin:0 auto;}
+.main-right dl dt{ float:left;}
+.main-right dl dd{ float:left; margin-left:23px;}
+.main-right dl dd span{ font-size:14px; color:#666; line-height:24px;}
+.main-right dl dd span a{ color:#dbad5a;}
+.login-box{ margin-top:50px; width:100% height:15px;}
+.login-box p{float:right;}
+.login-box p a{ font-size:14px; color:#666; margin-left:20px;}
+
+
+/*注册页*/
+.register-main{ width:695px; height:415px; margin:0 auto; margin-top:115px; margin-bottom:50px;}
+.register-main-left{ float:left; width:345px; height:415px; padding-right:97px; border-right:1px solid #e6e6e6;}
+.number{ width:343px; height:40px;}
+input.names{ width:303px; height:38px; border:1px solid #959595; background:url(../images/person.png) no-repeat left 10px center; font-size:14px; color:#999794; padding-left:40px;}
+.code{ width:100%; height:40px; margin-top:25px;}
+input.codes{ float:left; width:125px; height:38px;border:1px solid #959595;font-size:14px; color:#999794; padding-left:40px; background:url(../images/code3.png) no-repeat left 10px center; }
+.code img{ display:block; width:100px; height:42px; float:left; margin-left:10px;}
+.code a{ font-size:12px; color:#0987d4; float:right; text-decoration:underline; margin-top:16px;}
+.obtain{ width:100%; height:40px; margin-top:25px;}
+input.blank{ width:164px; height:38px;border:1px solid #959595;  float:left; line-height:38px;}
+input.message-code{ width:166px; height:40px; font-size:14px; color:#2f2f2f; text-align:center; float:right; background:#f7f7f7; cursor:pointer;}
+.keywords{ width:100%; height:40px; margin-top:25px;}
+input.words{ width:303px; height:38px; border:1px solid #959595; background:url(../images/key.png) no-repeat left 10px center; font-size:14px; color:#999794; padding-left:40px; margin-bottom:25px; line-height:38px;}
+input.confirm{width:303px; height:38px; border:1px solid #959595; background:url(../images/key.png) no-repeat left 10px center; font-size:14px; color:#999794; padding-left:40px; line-height:38px;}
+.agree{ width:100%; height:20px; margin-top:25px;}
+input.agreement{ float:left; margin-top:2px;}
+.agree span{ float:left; margin-left:10px; font-size:12px; color:#333;}
+.agree a{float:left;font-size:12px; color:#484db6;}
+.submit{ width:100%; height:43px; margin-top:25px;}
+input.report{ width:100%; height:43px; background:#14181b; font-size:18px; color:#ffe08b; text-align:center; }
+.register-main-right{ float:left; width:252px; height:415px;}
+.register-main-right dl{ margin-left:100px; width:120px; height:180px;}
+.register-main-right dl dt{ width:116px; height:116px; margin-bottom:7px;}
+.register-main-right dl dt img{ display:block; width:116px; height:116px;}
+.register-main-right dl dd{ width:100%; margin-top:13px; font-size:14px; color:#666; text-align:center;}
+.register-main-right dl dd a{ color:#bf8236;}
+.has{ width:178px; height:80px; margin-top:65px; margin-left:75px; text-align:center;}
+.has span{ font-size:14px; color:#333;}
+.has a{ display:block; width:178px; height:37px; margin-top:20px; background:#cc9d4f; border-radius:5px; text-align:center; font-size:14px; color:#fff; line-height:37px;}
+
+/*注册成功*/
+.success-box{ width:1198px; margin:0 auto; margin-bottom:70px; border:1px solid #dedede;}
+.success-box dl{ width:360px; margin:0 auto; padding:45px 0 70px;}
+.success-box dl dt{ float:left; padding-left:37px; }
+.success-box dl dd b{ font-size:20px; line-height:50px; margin-left:10px;}
+.success-box dl dd span{ display:block;font-size:14px; color:#333; margin-top:45px;}
+.success-box dl dd span a{ color:#ff9900;}
+.forthwith{ width:110px; margin:0 auto; margin-bottom:70px;}
+.forthwith a{ display:block;width:110px; height:32px; background:#ff9900;font-size:14px; color:#fff; text-align:center; line-height:32px; border-radius:1px;}
+
+/*填写账户名*/
+.top{ width:1200px; margin:0 auto; height:95px;}
+.top-left{ float:left; height:95px;}
+.top-left h1{ float:left; margin-top:17px; width:174px; height:56px;}
+.top-left h1 a img{ display:block;}
+.top-left span{ float:left; margin-left:45px; font-size:20px; color:#2f2f2f; line-height:95px;}
+.top-right{ float:right; height:68px; padding-top:27px; font-size:14px; color:#2f2f2f;}
+.top-right a{ color:#0987d4;}
+.fill-main-box{ width:1200px;; height:325px; margin:0 auto; margin-bottom:80px; margin-top:30px;}
+.fill-main{ width:980px; margin:0 auto; height:325px;}
+.step1{ background:url(../images/step.png); width:980px; height:30px; margin-bottom:8px;}
+.step1 ul li{ display:block; width:245px; float:left; height:30px; font-size:14px; color:#666; text-align:center; line-height:30px;}
+.step1 ul li em{ font-size:18px; font-style:normal; line-height:30px;}
+.step1 ul li.white{ color:#fff;}
+.input-box{ width:978px; height:226px; border:1px solid #dedede; padding-top:57px; }
+.numbers{ width:343px; height:40px; margin:0 auto;}
+input.names{ width:303px; height:38px; border:1px solid #959595; background:url(../images/person.png) no-repeat left 10px center; font-size:15px; line-height:38px; color:#999794; padding-left:40px;}
+.check{ width:343px; height:40px; margin:0 auto; margin-top:25px;}
+input.codes{ float:left; width:125px; height:38px;border:1px solid #959595;font-size:14px; color:#999794; padding-left:40px; background:url(../images/code3.png) no-repeat left 10px center; line-height:38px;}
+.check img{ display:block; width:100px; height:42px; float:left; margin-left:10px;}
+.check a{ font-size:12px; color:#0987d4; float:right; text-decoration:underline; margin-top:16px;}
+.next{ width:110px; height:32px; margin:0 auto; margin-top:50px;}
+input.one-step{ width:110px; height:32px; cursor:pointer; background:#ff9900; font-size:14px; color:#fff;}
+
+/*选择找回方式*/
+.top{ width:1200px; margin:0 auto; height:95px;}
+.top-left{ float:left; height:95px;}
+.top-left h1{ float:left; margin-top:17px; width:174px; height:56px;}
+.top-left h1 a img{ display:block; }
+.top-left span{ float:left; margin-left:45px; font-size:20px; color:#2f2f2f; line-height:95px;}
+.top-right{ float:right; height:68px; padding-top:27px; font-size:14px; color:#2f2f2f;}
+.top-right a{ color:#0987d4;}
+.back-notice{ width:1200px; height:55px; margin:0 auto;}
+.back-notice span{ font-size:14px; color:#333; text-align:left; line-height:55px; padding-left:110px;}
+.back-main-box{ width:1200px; height:355px;  margin:0 auto; margin-bottom:80px;}
+.back-main{ width:980px; height:355px; margin:0 auto;}
+.step2{ background:url(../images/step1.png); width:980px; height:30px; margin-bottom:8px;}
+.step2 ul li{ display:block; width:245px; float:left; height:30px; font-size:14px; color:#666; text-align:center; line-height:30px;}
+.step2 ul li em{ font-size:18px; font-style:normal; line-height:30px;}
+.step2 ul li.white{ color:#fff;}
+.back-main p{font-size:14px; color:#333; text-align:left; margin-top:25px; line-height:30px;}
+.back-box1{ width:978px; padding-top:5px; margin-top:10px;  }
+.back-box1 ul li{ display:block; width:778px; height:80px; background:#f9f9f9; border:1px solid #dedede; margin-bottom:30px; padding:30px 100px 0 100px;}
+.back-box1 table{font-family:"宋体";}
+.back-box1 table tr td{ font-size:14px; padding:0; margin:0;}
+.back-box1 table tr td div{ width:100px;}
+.back-box1 ul li table tr td i{ font-style:normal; font-size:12px; font-family:"宋体"; color:#999999}
+.back-box1 ul li table tr td i em{ font-style:normal; color:#FF0000;}
+input.yellowbut{ border:none; background:#ff9900; padding:10px 30px; text-align:center; color:#FFFFFF; font-weight:bolder; font-size:14px;}
+
+/*手机找回*/
+.step3{ background:url(../images/step2.png); width:980px; height:30px; margin:0 auto; margin-bottom:8px;}
+.step3 ul li{ display:block; width:245px; float:left; height:30px; font-size:14px; color:#666; text-align:center; line-height:30px;}
+.step3 ul li em{ font-size:18px; font-style:normal; line-height:30px;}
+.step3 ul li.white{ color:#fff;}
+.back-main-boxes{ width:1200px;; height:380px;  margin:0 auto;}
+.step-box{ width:1200px; margin:0 auto;}
+.back-box{width: 978px;height: 226px;border:1px solid #dedede; margin:0 auto; margin-bottom:70px;padding-top: 57px;}
+.verify{ width:320px; height:70px; margin:0 auto;}
+.verify span{ font-size:14px; color:#000; float:left; line-height:30px;}
+input.white{ width:235px; height:30px; border:1px solid #ccc; margin-left:25px;}
+.verify a{ display:block; width:98px; height:21px; background:#eee; text-align:center; font-size:12px;font-family:"宋体"; color:#bbb; line-height:21px;margin-top:15px; float:left;margin-left:67px;}
+.verify i{ font-style:normal; font-size:12px; color:#666; font-family:"宋体"; line-height:21px; margin-top:15px; display:block; margin-left:5px; float:right;}
+.next-step{ width:110px; height:32px; margin:0 auto; margin-top:35px;}
+.next-step a{ display:block; width:110px; height:32px; background:#ff9900; font-size:14px; color:#fff; text-align:center; line-height:32px;}
+
+/*邮箱找回*/
+.step-box3{ width:1200px; height:450px; margin:0 auto;}
+.mail-back-box{width:500px;height:350px;border: 1px solid #dedede;padding-top:57px; padding-left:240px; padding-right:240px; margin-bottom:70px; margin:0 auto}
+input.yellowbut{ border:none; background:#ff9900; padding:10px 30px; text-align:center; color:#FFFFFF; font-weight:bolder; font-size:14px;}
+.regtable{ width:520px;}
+.regtable table{font-family:"宋体"; margin-top:30px;}
+.regtable table tr td{ font-size:14px; padding:0; margin:0;}
+.regtable table tr td div{ width:100px;}
+.regtable table  label{display:inline-block; padding:0 15px; font-size:12px;}
+.regtable table i{font-style:normal; color:#aaaaaa; font-size:12px; display:inline-block; height:17px; overflow:hidden; padding-left:20px;}
+.regtable table em{display:block; background:#eeeeee; width:85px; height:20px; display:inline; padding:5px 35px; font-style:normal; font-size:12px;}
+.regtable table em.c1{ background:#ef2631; color:#FFFFFF;}
+table em{display:block; background:#eeeeee; width:85px; height:20px; display:inline; padding:5px 35px; font-style:normal; font-size:12px;}
+table em.c1{ background:#ef2631; color:#FFFFFF;}
+.regtable table select{display:inline; height:34px; width:80px;}
+.regtable table a.sx{ font-size:12px; color:#FF0000;}
+.regtable table tr td input.pcodes{display:block; width:137px; height:25px;border:1px solid #e3e3e3; background:#f2f2f2; font-size:12px; color:#333;}
+input.back{ border:none; background:#fff; padding:10px 30px; text-align:center; color:#ff9900;font-weight:bolder; font-size:14px; }
+.regtable table b{ font-size:12px; display:block; margin-top:40PX;}
+.regtable table p{ font-size:12px; color:#666666; padding:5px 0;}
+.regtable table p a{ color:#ff9900;}
+.regtable table h2{ font-size:18px;}
+
+/*修改密码*/
+.step-box2{ width:1200px; margin:0 auto; margin-top:60px; margin-bottom:70px;}
+.revised-box{ width:678px; padding:20px 100px 50px 200px; border:1px solid #dedede; margin-top:55px;  margin:0 auto; margin-bottom:70px;}
+.regtable table{font-family:"宋体"; margin-top:30px;}
+.regtable table tr td{ font-size:14px; padding:0; margin:0;}
+.regtable table tr td div{ width:100px;}
+.regtable table  label{display:inline-block; padding:0 15px; font-size:12px;}
+.regtable table input.regbut{display:block; width:296px; height:34px; border:1px solid #aaaaaa; padding:0 4px;}
+.regtable table input.redcode{width:150px;}
+.regtable table i{font-style:normal; color:#aaaaaa; font-size:12px; display:inline-block; height:17px; overflow:hidden; padding-left:20px;}
+.regtable table em{display:block; color:#fff; background:#eeeeee; width:85px; height:20px; display:inline; padding:5px 35px; font-style:normal; font-size:12px;}
+.regtable table em.b1{ background:#ff9900; color:#FFFFFF;}
+table em{display:block; background:#eeeeee; width:85px; height:20px; display:inline; padding:5px 35px; font-style:normal; font-size:12px;}
+table em.c1{ background:#ef2631; color:#FFFFFF;}
+.regtable table select{display:inline; height:34px; width:80px;}
+.regtable table a.sx{ font-size:12px; color:#FF0000;}
+.regtable table tr td input.pcode{display:block; width:137px; height:21px; background:url(../images/phonecode.png); border:none;}
+.regtable table tr td input.redbut{ border:none; background:#ef2631; padding:10px 30px; text-align:center; color:#FFFFFF; font-weight:bolder; font-size:14px;}
+input.yellowbut{ border:none; background:#ff9900; padding:10px 30px; text-align:center; color:#FFFFFF; font-weight:bolder; font-size:14px;}
+input.goback{ border:none; background:#fff; padding:10px 30px; text-align:center; color:#FFFFFF; font-weight:bolder; font-size:14px; font-weight:lighter; color:#333333;}
+.adopt table b{ font-size:12px; display:block; margin-top:40PX;}
+.regtable table p{ font-size:12px; color:#666666; padding:5px 0;}
+.regtable table h2{ font-size:18px;}
+
+/*修改密码成功*/
+.step-box2{ width:1200px; margin:0 auto; margin-top:60px; margin-bottom:70px;}
+.step4{ background:url(../images/step3.png); width:980px; height:30px; margin:0 auto; margin-bottom:8px;}
+.step4 ul li{ display:block; width:245px; float:left; height:30px; font-size:14px; color:#666; text-align:center; line-height:30px;}
+.step4 ul li em{ font-size:18px; font-style:normal; line-height:30px;}
+.step4 ul li.white{ color:#fff;}
+.regtable table{font-family:"宋体"; margin-top:30px;}
+.regtable table tr td{ font-size:14px; padding:0; margin:0;}
+.regtable table tr td div{ width:100px;}
+.back-box4{ width:678px; padding:50px 100px 80px 200px; border:1px solid #dedede; margin:0 auto;  margin-top:40px; }
+input.loginbut{ border:none; background:#ff9900; padding:10px 30px; text-align:center; margin-top:50px; color:#fff; font-weight:bolder; font-size:14px; margin-left:120px;}
+
+
+/*完善基础信息*/
+.message{ width:715px; margin:0 auto; margin-top:50px; margin-bottom:70px;}
+.message ul li{ float:left; width:100%; height:40px; margin-bottom:25px;}
+.message ul li span{ float:left; display:block; width:85px; text-align:right; margin-right:24px; font-size:14px; color:#333; line-height:40px;}
+.message ul li span.narrow{ line-height:32px;}
+.message ul li span b{ color:#e8654c;}
+input.account{ width:330px; height:38px; border:1px solid #dedede; float:left; padding-left:10px; font-size:14px; color:#999794;}
+select.number{ width:148px; height:30px; border:1px solid #dedede; margin-right:40px; font-size:14px; color:#959595;}
+textarea.address{ width:610px; height:63px; border:1px solid #dedede; margin-left:109px; padding:10px 0 0 10px; font-size:14px; color:#999794;}
+.message ul li.address{ height:75px;}
+.message ul li.pic{ height:120px;}
+.message ul li.pic a{width:120px; height:120px; display:block; position:relative; float:left;}
+
+.next-but{ width:342px; height:43px; margin:0 auto; margin-top:70px;}
+input.step-but{ width:342px; height:43px; background:#dbad5a; font-size:18px; color:#fff; text-align:center; border-radius:2px; cursor:pointer;}
+
+
+/*错误提示*/
+.error{ width:300px; font-size:12px; color:#ff0000; background:url(../images/er.png) left center no-repeat; padding-left:18px;}
+input.err{ border:1px solid #ff0000;}

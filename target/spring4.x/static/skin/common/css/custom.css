@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+a:hover{color:#f32527;}
+/* 基础布局 */
+.fl{float:left}
+.fr{float:right}
+.fnone{float:none;}
+.wlang{width:100%;}
+.w1440{width:1440px;}
+.w1200{width:1200px;}
+.w1100{width:1100px;}
+.w1000{width:1000px;}
+.w900{width:900px;}
+.w800{width:800px;}
+.w80{ width:80px;}
+.w50{ width:50px;}
+.w100{ width:100px;}
+.w140{ width:140px;}
+.h30{ height:30px; line-height:30px;}
+.auto{margin:0 auto}
+.mt5{margin-top:5px}
+.mt10{margin-top:10px}
+.mt15{margin-top:15px}
+.mt20{margin-top:20px}
+.mt25{margin-top:25px}
+.mt30{margin-top:30px}
+.mb5{margin-bottom:5px}
+.mb10{margin-bottom:10px}
+.mb15{margin-bottom:15px}
+.mb20{margin-bottom:20px}
+.ml10{ margin-left:10px;}
+.mb30{margin-bottom:30px}
+.block{ display:block;}
+.inline{ display:inline-block;}
+.ml20{ margin-left:20px;}
+.hr20{ height:20px;}
+.hr40{ height:40px; line-height:40px;}
+.hr80{ height:80px;}
+.pointer{ cursor:pointer;}
+
+
+/*基础颜色*/
+.font333{color:#333333}
+.font666{color:#666666}
+.font999{color:#999999}
+.fontccc{color:#cccccc}
+.fonteee{color:#eeeeee}
+.red{ color:#cc0000;}
+
+/* 分割线 */
+.border{border:1px solid #eee;}
+.line333{border-color:#333333}
+.line666{border-color:#333333}
+.line999{border-color:#333333}
+.lineccc{border-color:#cccccc}
+.lineeee{border-color:#eeeeee}
+.line5{border-color:#e5e5e5;}
+.line_b{ border-bottom:1px solid #e0e0e0;}
+.border_c{ border:1px solid #ccc;}
+
+/* 基础文字大小*/
+.font12{font-size:12px;}
+.font14{font-size:14px;}
+.font16{font-size:16px;}
+.font18{font-size:18px;}
+.font20{font-size:20px;}
+.font22{font-size:22px;}
+.font24{font-size:24px;}
+.font25{font-size:24px;}
+.font40{font-size:40px;}
+
+/* 基础补白 */
+.p5{padding:5px;}
+.p10{padding:10px;}
+.p15{padding:15px;}
+.p20{padding:20px;}
+.pt10{padding-bottom:10px;}
+.pt15{padding-bottom:15px;}
+.pt20{padding-bottom:20px;}
+.pt25{padding-bottom:25px;}
+.pt30{padding-bottom:30px;}
+.pb10{padding-bottom:10px;}
+.pb15{padding-bottom:15px;}
+.pb20{padding-bottom:20px;}
+.pb25{padding-bottom:25px;}
+.pb30{padding-bottom:30px;}
+.pl5{padding-left:5px;}
+.pl10{padding-left:10px;}
+.pl15{padding-left:15px;}
+.pl20{padding-left:20px;}
+.pr5{padding-right:5px;}
+.pr10{padding-right:10px;}
+.pr15{padding-right:15px;}
+.pr20{padding-right:20px;}
+.pad55{ padding:55px;}
+.pad40{ padding:40px;}
+.pad10{ padding:10px;}
+
+/* 基础背景 */
+.bgeee{background:#eeeeee;}
+.bgfaf{background:#fafafa;}
+.bgwhite{ background:#fff;}
+
+/* 图片效果鼠标移动放大效果 */
+a.por img {-webkit-transition:all ease .4s; transition: all ease .4s;}
+a.por:hover img {-webkit-transform: scale(1.06); transform: scale(1.06);}
+
+/*清除浮动*/
+.clear{ clear:both;}
+/*特殊字体*/
+@font-face { font-family: impact; src:url(impact.ttf); }
+.impact{font-family: impact;}
+
+
+/*居中*/
+.mr{ margin:0px auto;}
+
+
+/*浮动*/
+.fl{ float:left;}
+.fr{ float:right;}
+
+
+
+.blank{ width:100%;  text-align:center;}
+.blank img,.blank p{ display:inline-block; float:left; margin-top:50px;}
+
+.blank p{ font-size:14px; margin-left:5px; color:#999; line-height:34px;}
+.blank img{ margin-right:10px;}
+

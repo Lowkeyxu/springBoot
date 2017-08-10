@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*资讯*/
+.menu{ width:1198px; height:47px; margin:50px auto; margin-bottom:0; border:1px solid #ebebeb; background-color:#fcfcfc;}
+.menu li{width:115px; float:left; text-align:center; border-right:1px solid #ebebeb; height:47px; line-height:47px; position:relative;}
+.menus li{ padding:0 20px; width:auto; float:left; text-align:center; border-right:1px solid #ebebeb; height:47px; line-height:47px; position:relative;}
+.menu li a{ font-size:16px; color:#564e4e;}
+.menu li.cur a{ color:#ff9b00;}
+.main{ width:1200px; height:auto; overflow:hidden; clear:both; margin:0 auto; margin-bottom:85px;}
+.pit{  width:1160px;height:auto; overflow:hidden; clear:both; margin:0 auto; margin-top:20px;}
+.pit ul{ display:block; list-style:none; width:1160px;}
+.pit ul li{ float:left; width:1160px; height:255px; border-bottom:1px solid #eae9e9;padding-top:35px; }
+.pit ul li h2{ font-size:20px; color:#070707; font-weight:normal; }
+.picture{ padding-top:27px;}
+.frame{ width:160px; padding:0 9px; height:150px;  border:1px solid #cccccc; float:left; }
+.frame img{ width:160px; height:150px;}
+.person{ width:160px; height:151px; }
+.article{ width:955px; height:90px; overflow:hidden;  float:right;}
+.article h3{font-size:14px; font-weight:normal; color:#070707; line-height:30px;}
+.article h3 a{ color:#726767;}
+.article h3 a:hover{ color:#ff6d00;}
+.day{ float:left;width:465px; height:15px; padding-left:22px; padding-top:35px;}
+.day p{ font-size:14px; color:#a2a0a0; float:left;}
+.details{ float:right; padding-top:27px;}
+.details a{ display:block; border-radius:5px; width:93px; height:36px; font-size:14px; color:#fff; background:#ff6d00; text-align:center; line-height:36px;}
+
+.pits{ width:1200px;}
+
+.pits ul li{width:1200px; display:block; height:45px; border-bottom:1px dotted #eae9e9; line-height:45px;}
+.pits ul li a{ font-size:14px; float:left;}
+.pits ul li a:hover{ color:#ff9b00}
+.pits ul li i{ float:right; font-size:12px; color:#CCC; font-style:normal;}
+
+
+/*资讯详情*/
+.content-box{ width:1200px; height:auto; margin:0 auto; margin-top:60px; }
+.content{width:1100px; margin:0 auto; height:auto; overflow:hidden; clear:both;margin-bottom:230px;}
+.title{ width:1100px; margin:0 auto; height:100px; border-bottom:1px solid #a9a9a9;}
+.title h1{ font-size:28px; color:#2b2b2b; font-weight:normal; float:left; width:100%; line-height:65px;}
+.time{ float:left;}
+.time span{ display:block; font-size:16px; color:#918e8e;}
+.share{ float:right; width:290px; height:20px;}
+.share ul li{height:20px; float:left; border-right:1px solid #efefef;}
+.share ul li a img{ float:left; padding:0 14px;}
+.share ul li.none{ border-right:none;}
+.share ul li.none img{ padding-right:0;}
+.lead{ width:100%; height:auto; overflow:hidden;clear:both; margin-top:22px; margin-bottom:10px;}
+.lead p{ font-size:16px; color:#a9a6a6; line-height:30px;}
+.text{width:100%; height:auto;overflow:hidden;clear:both; margin-bottom:85px;}
+.text p{ font-size:16px; color:#383636; line-height:40px; text-indent:2em;}
+.pic-box{ padding-left:200px;}
+.pic-box a img{ width:452px; height:729px;}
+
+/*帮助中心*/
+.help-box{ width:1200px; margin:0 auto; overflow:hidden; clear:both; margin-top:30px; margin-bottom:75px;height:auto;}
+.help-left{ float:left; width:225px; height:auto; border:1px solid #eaeaea; padding-bottom:44px;}
+.help-left h2{ width:225px; margin:0 auto; line-height:54px; height:54px; font-size:16px; color:#fff; background:#000; font-weight:normal;}
+.help-left h2 img{ float:left; width:17px; height:17px; padding-left:30px; padding-top:18px; padding-right:8px;}
+.help-left dl{ width:225px; margin:0 auto; height:auto; clear:both; overflow:hidden;}
+.help-left dl dt{ width:169px; height:35px; line-height:35px; font-size:14px; color:#000; background:#f7f7f7; padding-left:56px;}
+.help-left dl dd{ width:157px; height:33px; line-height:33px; padding-left:68px; }
+.help-left dl dd a{font-size:14px; color:#666;}
+.help-left dl dd a:hover{ color:#dbad5a;}
+.help-right-box{ float:right;width:950px; height:870px; overflow:hidden;border:1px solid #ddd;}
+.help-right{width:865px;  margin:0 auto;  height:auto;overflow:hidden; position:relative;}
+.guide-top{ width:865px; height:44px; border-bottom:1px solid #dbad5a;}
+.guide-box{ width:226px; height:43px; overflow:hidden; position:absolute; z-index:999;top:22px; left:331px; background:#dbad5a; text-align:center; border-radius:20px;}
+.guide-box span{ font-size:16px; color:#fff; line-height:43px;}
+.clause{ width:100%; height:auto;float:left; margin-top:40px;}
+.clause dl{ width:100%;}
+.clause dl dt{ font-size:12px; color:#666; line-height:25px;}
+.clause dl dd{font-size:12px; color:#666; line-height:30px;}
