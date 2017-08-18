@@ -57,7 +57,7 @@
         <dl>
             <dt>快递单号：</dt>
             <dd>
-                <input id="number" type="text" class="Simpo-input Simpo-input200" placeholder="请输入快递单号" />
+                <input id="number" name="number" type="text" class="Simpo-input Simpo-input200 required" placeholder="请输入快递单号" />
             </dd>
         </dl>
         <label><input id="btnSearch" type="button" class="Edit-input  Edit-input-yellow" onclick="queryEms()" value="查询" /></label>
@@ -73,14 +73,14 @@
     <b>号码归属地查询</b>
 </div>
 <br class="clear"/>
-<form>
+<form id="searchphone">
     <!-- 检索开始 -->
     <!-- 检索开始 -->
     <div class="gysearchbox clearfix">
         <dl>
             <dt>手机号：</dt>
             <dd>
-                <input id="phone" type="text" class="Simpo-input Simpo-input200" placeholder="请输入手机号" />
+                <input id="phone" type="text" class="Simpo-input Simpo-input200 required mobile" placeholder="请输入手机号" />
             </dd>
         </dl>
         <label><input type="button" class="Edit-input  Edit-input-yellow" onclick="queryPhone()" value="查询" /></label>

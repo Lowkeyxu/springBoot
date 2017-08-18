@@ -173,7 +173,7 @@
 
 /* 检索 */
 .gysearchbox{width:975px; background:#f8f8f8; padding:15px 10px}
-.gysearchbox dl{ display:block; width:290px; height:45px; float:left;}
+.gysearchbox dl{ display:block; width:440px; height:45px; float:left;}
 .gysearchbox dl dt{ display:block; float:left; font-size:14px; line-height:30px; color:#666666;}
 .gysearchbox dl dd{ float:left;}
 
