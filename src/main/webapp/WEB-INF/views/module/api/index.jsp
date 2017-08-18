@@ -18,9 +18,7 @@
 <div class="webtitle">
     <b>快递查询</b>
 </div>
-
 <br class="clear"/>
-
 <form id="searchorder">
     <!-- 检索开始 -->
     <!-- 检索开始 -->
@@ -67,6 +65,29 @@
     <div class="SIMPO_Table">
     <table border="0" cellspacing="0" cellpadding="0" id="resultEMS">
     </table>
+    </div>
+    <!-- 检索结束 -->
+</form>
+<br class="clear"/>
+<div class="webtitle">
+    <b>号码归属地查询</b>
+</div>
+<br class="clear"/>
+<form>
+    <!-- 检索开始 -->
+    <!-- 检索开始 -->
+    <div class="gysearchbox clearfix">
+        <dl>
+            <dt>手机号：</dt>
+            <dd>
+                <input id="phone" type="text" class="Simpo-input Simpo-input200" placeholder="请输入手机号" />
+            </dd>
+        </dl>
+        <label><input type="button" class="Edit-input  Edit-input-yellow" onclick="queryPhone()" value="查询" /></label>
+    </div>
+    <div class="SIMPO_Table">
+        <table border="0" cellspacing="0" cellpadding="0" id="resultPHONE">
+        </table>
     </div>
     <!-- 检索结束 -->
 </form>

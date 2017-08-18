@@ -4,11 +4,14 @@ $(function(){
 
 //快递查询
 function queryEms(){
+    //快递编码
     var type = $("#type").val();
+    //快递单号
     var number = $("#number").val();
     ajaxPostCallback("/api/queryLogistics",{"type":type,"number":number},function(data){
-        if(data != ""){
-            var json = eval("(" + data + ")");
+        if(data != "" && data != null){
+            //var json = eval('(' + data + ')');
+            var json = data;
             if(json.status == 200){
                 var _html = "";
                 var weekday=new Array(7);
@@ -33,5 +36,19 @@ function queryEms(){
         }else{
             alert("请求失败");
         }
+    });
+}
+
+//查询号码归属地
+function queryPhone(){
+   var phone = $("#phone").val();
+    ajaxPostCallback("/api/queryPhone",{"phone":phone},function(data){
+        data = eval(data);
+        var _html = "";
+        _html+="<tr class=\"last\"><td class=\"row1\">"+data.catName+"</td></tr>";
+        _html+="<tr class=\"last\"><td class=\"row1\">"+data.carrier+"</td></tr>";
+        _html+="<tr class=\"last\"><td class=\"row1\">"+data.province+"</td></tr>";
+        _html+="<tr class=\"last\"><td class=\"row1\">"+data.telString+"</td></tr>";
+        $("#resultPHONE").html(_html);
     });
 }
