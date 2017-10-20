@@ -8,7 +8,6 @@
 	<mime-type>application/vnd.wap.xhtml+xml</mime-type> 
 	<mime-type>application/xhtml+xml</mime-type>
 	-->
-	<mapping path="/kdReBack.html" exclude="true" />
 
 	<!-- 默认装饰器，当下面的路径都不匹配时，启用该装饰器进行装饰  默认前台装饰-->
 	<mapping decorator="/WEB-INF/views/common/decorators/decorator.jsp" />
@@ -16,89 +15,5 @@
 	<!--<mapping path="/*" decorator="/WEB-INF/views/common/decorators/decorator.jsp" />-->
 	<mapping path="/index*" decorator="/WEB-INF/views/common/decorators/main.jsp" />
 
-	<!-- 购物车 订单-->
-	<mapping path="/cart*" decorator="/WEB-INF/views/common/decorators/cartFront.jsp" />
-	<mapping path="/order/*" decorator="/WEB-INF/views/common/decorators/cartFront.jsp" />
-
-	<!-- 供应商页面 -->
-	<mapping path="/b.html" decorator="/WEB-INF/views/common/decorators/business.jsp" />
-	<mapping path="/b/*" decorator="/WEB-INF/views/common/decorators/business.jsp" />
-
-	<!-- 采购商页面 -->
-	<mapping path="/m.html" decorator="/WEB-INF/views/common/decorators/memCenter.jsp" />
-	<mapping path="/m/*" decorator="/WEB-INF/views/common/decorators/memCenter.jsp" />
-
-	<!-- 店铺页面 -->
-	<mapping path="/shop/*" decorator="/WEB-INF/views/common/decorators/shopInfo.jsp" />
-
-	<!--登录注册页面-->
-	<mapping path="/login.html" decorator="/WEB-INF/views/common/decorators/loginTemplet.jsp"/>
-	<mapping path="/reg.html" decorator="/WEB-INF/views/common/decorators/loginTemplet.jsp"/>
-	<mapping path="/reg/*" decorator="/WEB-INF/views/common/decorators/loginTemplet.jsp"/>
-	<mapping path="/pwd.html" decorator="/WEB-INF/views/common/decorators/loginTemplet.jsp"/>
-	<mapping path="/pwd/*" decorator="/WEB-INF/views/common/decorators/loginTemplet.jsp"/>
-
-
-	<mapping path="/reg/protocol.html" exclude="true" />
-	<mapping path="/m/apply/protocol.html" exclude="true" />
-
-	<!--测试页面-->
-	<mapping path="/test/*" decorator="/WEB-INF/views/common/decorators/business.jsp" />
-	<mapping path="/m/bids/auction/goodIndex.html" decorator="/WEB-INF/views/common/decorators/pop.jsp"/>
-	<mapping path="/m/bids/auction/sellIndex.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/auction/lookGoodPrice.html" decorator="/WEB-INF/views/common/decorators/pop.jsp"/>
-	<mapping path="/m/bids/auction/lookSellFile.html" decorator="/WEB-INF/views/common/decorators/pop.jsp"/>
-	<mapping path="/m/bids/tender/tenderCheckForm.html" decorator="/WEB-INF/views/common/decorators/pop.jsp"/>
-	<!--弹出层装饰页面-->
-	<mapping path="/b/buy/goodsList.html" exclude="true"/>
-	<mapping path="/b/shop/systemOpen.html" decorator="/WEB-INF/views/common/decorators/pop.jsp"/>
-	<mapping path="/b/shop/goodModel.html" decorator="/WEB-INF/views/common/decorators/pop.jsp"/>
-	<mapping path="/b/shop/yhModel.html" decorator="/WEB-INF/views/common/decorators/pop.jsp"/>
-	<mapping path="/b/shop/fwbModel.html" decorator="/WEB-INF/views/common/decorators/pop.jsp"/>
-	<mapping path="/m/info/memOpen.html" decorator="/WEB-INF/views/common/decorators/pop.jsp"/>
-	<mapping path="/order/addressResult.html" decorator="/WEB-INF/views/common/decorators/cartPop.jsp"/>
-	<mapping path="/order/invoiceResult.html" decorator="/WEB-INF/views/common/decorators/cartPop.jsp"/>
-	<mapping path="/b/goods/goodsTypeView.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/b/goods/goodsUnit.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/b/goods/storePage.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/b/goods/viewOrder.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/b/order/seller/view.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/order/applyOrder.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/allCheck.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/bids/project/signUp.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/popLogin.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/bids/project/signUp.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/goSelectProject.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/contract/gForm.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/contract/plan.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/contract/bus.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/contract/checkAll.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/contract/goodsList.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/checkTenderForm.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/goodForm.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/order/deliveryDetail.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/expertIndex.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/addExpert.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/juderIndex.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/lookTenderGoodPrice.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/lookTenderFile.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/bids/complaints.html" decorator="/WEB-INF/views/common/decorators/cartPop.jsp" />
-
-	<mapping path="/m/bids/auction/checkstatusFrom.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/bids/project/upSupplier.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/goodIndex.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/buy/completeInfo.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/auction/auctionList.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/b/order/seller/view.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<!--加入购物车成功弹出页面-->
-	<mapping path="/addCarSuccess.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<!--收藏商品成功弹出页面-->
-	<mapping path="/addGoodsCollect.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<!--收藏店铺成功弹出页面-->
-	<mapping path="/addShopsCollect.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<!--平台反馈建议-->
-	<mapping path="/toLetter.html" decorator="/WEB-INF/views/common/decorators/cartPop.jsp" />
-	<mapping path="/b/bids/goto.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
-	<mapping path="/m/bids/getPublicityContent.html" decorator="/WEB-INF/views/common/decorators/pop.jsp" />
 
 </sitemesh>

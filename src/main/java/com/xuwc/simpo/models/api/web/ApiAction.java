@@ -10,16 +10,17 @@ import com.alibaba.fastjson.JSONObject;
 import com.xuwc.simpo.common.utils.HttpClientUtil;
 import com.xuwc.simpo.models.api.service.EmsService;
 import com.xuwc.simpo.models.api.vo.EmsVo;
+import com.xuwc.simpo.test.activeMQ.TopicSendMessage;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /** 免费API接口Action
  * @author xuwc
@@ -30,8 +31,12 @@ import java.util.Map;
 @RequestMapping("api")
 public class ApiAction {
 
+    private Logger logger = LoggerFactory.getLogger(ApiAction.class);
+
     @Autowired
     private EmsService emsService;
+    @Autowired
+    private TopicSendMessage topicSendMessage;
 
     //API入口页面
     @RequestMapping("")
@@ -52,10 +57,9 @@ public class ApiAction {
     @ResponseBody
     public JSONObject queryLogistics(String type, String number){
         //demo api
-        final String URL = "http://www.kuaidi100.com/query?type="+type+"&postid="+number+"";
+        final String url = "http://www.kuaidi100.com/query?type="+type+"&postid="+number+"";
         //http 请求
-        String result = HttpClientUtil.httpClientRequest(URL);
-        Map<String, Object> data = new HashMap<String, Object>();
+        String result = HttpClientUtil.httpClientRequest(url);
         if(StringUtils.isNotEmpty(result)){
             return JSON.parseObject(result);
         }else{
@@ -71,9 +75,19 @@ public class ApiAction {
     @RequestMapping("/queryPhone")
     @ResponseBody
     public String queryPhone(String phone){
-        String URL = "https://tcc.taobao.com/cc/json/mobile_tel_segment.htm?tel="+phone;
-        String result = HttpClientUtil.httpClientRequest(URL);
+        String url = "https://tcc.taobao.com/cc/json/mobile_tel_segment.htm?tel="+phone;
+        String result = HttpClientUtil.httpClientRequest(url);
         return result;
+    }
+
+    /**
+     * activeMQ发送主题消息
+     * @param topicName 主题名称
+     * @param message 消息内容
+     */
+    @RequestMapping("/sendTopicMessage")
+    public void sendTopicMessage(String topicName,String message){
+        topicSendMessage.send(topicName,message);
     }
 
 }

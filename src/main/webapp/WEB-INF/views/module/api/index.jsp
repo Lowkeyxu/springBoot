@@ -91,5 +91,26 @@
     </div>
     <!-- 检索结束 -->
 </form>
+<br class="clear"/>
+<form id="searchmq">
+    <!-- 检索开始 -->
+    <!-- 检索开始 -->
+    <div class="gysearchbox clearfix">
+        <dl>
+            <dt>主题名称：</dt>
+            <dd>
+                <input id="topicName" name="topicName" type="text" class="Simpo-input Simpo-input200 required" placeholder="请输入主题名称" />
+            </dd>
+        </dl>
+        <dl>
+            <dt>消息内容：</dt>
+            <dd>
+                <textarea id="message"  name="message" rows="5" class="Simpo-input required" style="width: 360px">请输入发送的消息内容</textarea>
+            </dd>
+        </dl>
+        <label><input type="button" class="Edit-input  Edit-input-yellow" onclick="sendMsg()" value="发送" /></label>
+    </div>
+    <!-- 检索结束 -->
+</form>
 </body>
 </html>

@@ -73,6 +73,24 @@ $(function(){
             }
         }
     });
+
+    $("#searchmq").validate({
+        submitHandler: function(form){
+            var topicName = $("#topicName").val();
+            var message = $("#message").val();
+            ajaxPost("/api/sendTopicMessage",{"topicName":topicName,"message":message});
+            layer.msg("发送成功！", {icon: 6});
+        },
+        errorContainer: "#messageBox",
+        errorPlacement: function(error, element) {
+            $("#messageBox").text("输入有误，请先更正。");
+            if (element.is(":checkbox")||element.is(":radio")||element.parent().is(".input-append")){
+                error.appendTo(element.parent().parent());
+            } else {
+                error.insertAfter(element);
+            }
+        }
+    });
 });
 
 //快递查询
@@ -84,5 +102,13 @@ function queryEms(){
 //查询号码归属地
 function queryPhone(){
     $("#searchphone").submit();
+    return false;
+}
+
+/**
+ * 发送消息
+ */
+function sendMsg(){
+    $("#searchmq").submit();
     return false;
 }
