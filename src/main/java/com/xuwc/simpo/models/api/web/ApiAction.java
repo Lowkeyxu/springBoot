@@ -7,10 +7,12 @@ package com.xuwc.simpo.models.api.web;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.xuwc.simpo.common.cache.JedisUtils;
 import com.xuwc.simpo.common.utils.HttpClientUtil;
 import com.xuwc.simpo.models.api.service.EmsService;
 import com.xuwc.simpo.models.api.vo.EmsVo;
 import com.xuwc.simpo.test.activeMQ.TopicSendMessage;
+import com.xuwc.simpo.test.vo.UserVo;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -87,6 +89,12 @@ public class ApiAction {
      */
     @RequestMapping("/sendTopicMessage")
     public void sendTopicMessage(String topicName,String message){
+        UserVo userVo = new UserVo();
+        userVo.setLoginName("xuwc");
+        userVo.setUserName("hello world");
+        //测试jedis 存入缓存
+        JedisUtils.set(topicName,message,30000);
+        JedisUtils.setObject("user",userVo,3000);
         topicSendMessage.send(topicName,message);
     }
 

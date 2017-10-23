@@ -100,6 +100,7 @@
             <dt>主题名称：</dt>
             <dd>
                 <input id="topicName" name="topicName" type="text" class="Simpo-input Simpo-input200 required" placeholder="请输入主题名称" />
+                <a href="http://localhost:8161/admin/topics.jsp" target="_blank">查询</a>
             </dd>
         </dl>
         <dl>

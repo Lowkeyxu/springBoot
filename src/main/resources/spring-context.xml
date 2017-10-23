@@ -124,6 +124,10 @@
         <property name="configLocation" value="classpath:${ehcache.configFile}" />
     </bean>-->
 
+    <!--导入 redis 缓存配置 -->
+    <import resource="spring-context-redis.xml"/>
+
+
     <!-- 数据源配置, 使用 BoneCP 数据库连接池 -->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <!-- 数据源驱动类可不写，Druid默认会自动根据URL识别DriverClass -->
