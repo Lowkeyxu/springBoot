@@ -13,6 +13,8 @@ import javax.jms.Message;
 import javax.jms.MessageListener;
 import javax.jms.ObjectMessage;
 import javax.jms.TextMessage;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /** activeMQ监听
  * @author xuwc
@@ -37,7 +39,8 @@ public class TopicMessageListen implements MessageListener {
             logger.info("==========监听的数据为："+jsonStr);
             if (jsonStr != null) {
                 //Client info = JSON.parseObject(jsonStr, Client.class);
-                WebsocketController.broadcast("user", "推送的消息为："+jsonStr);
+                SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+                WebsocketController.broadcast("user", "推送的消息为："+jsonStr + "  时间："+df.format(new Date()));
             }
         } catch (Exception e) {
             e.printStackTrace();
