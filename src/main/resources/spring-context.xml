@@ -68,6 +68,7 @@
 
     <!-- 监听方式，这种方式更实用，可以一直监听消息 -->
     <bean id="topicMessageListen" class="com.xuwc.simpo.common.activemq.TopicMessageListen"/>
+
     <bean id="topicMessageListen2" class="com.xuwc.simpo.common.activemq.TopicMessageListen"/>
 
     <bean id="defaultMessageListenerContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">

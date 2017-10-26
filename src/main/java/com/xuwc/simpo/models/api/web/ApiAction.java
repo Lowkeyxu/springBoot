@@ -9,6 +9,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.xuwc.simpo.common.cache.JedisUtils;
 import com.xuwc.simpo.common.utils.HttpClientUtil;
+import com.xuwc.simpo.common.utils.UUIDGen;
 import com.xuwc.simpo.models.api.service.EmsService;
 import com.xuwc.simpo.models.api.vo.EmsVo;
 import com.xuwc.simpo.test.activeMQ.TopicSendMessage;
@@ -90,12 +91,25 @@ public class ApiAction {
     @RequestMapping("/sendTopicMessage")
     public void sendTopicMessage(String topicName,String message){
         UserVo userVo = new UserVo();
-        userVo.setLoginName("xuwc");
-        userVo.setUserName("hello world");
+        userVo.setId(UUIDGen.uuid());
+        userVo.setLoginName(topicName);
+        userVo.setUserName(message);
+        userVo.setSex("1");
+        userVo.setPassword(Math.random()+"");
         //测试jedis 存入缓存
-        JedisUtils.set(topicName,message,30000);
+        if(StringUtils.isNotEmpty(JedisUtils.get(topicName))){
+            System.out.println("从redis中获取到的数据为："+JedisUtils.get(topicName));
+            if(!message.equals(JedisUtils.get(topicName))){
+                JedisUtils.set(topicName,message,30000);
+            }
+        }else {
+            JedisUtils.set(topicName,message,30000);
+        }
         JedisUtils.setObject("user",userVo,3000);
+        //消息发送
         topicSendMessage.send(topicName,message);
+        //消息推送
+        //topicSendMessage.push(userVo);
     }
 
 }

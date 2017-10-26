@@ -52,4 +52,10 @@ public class UserVo extends DbBaseVo<UserVo>{
         this.password = password;
     }
 
+
+    @Override
+    public String toString() {
+        return "User [id=" + super.getId() + ", loginName=" + loginName + ", userName="
+                + userName + ", sex=" + sex + ", password=" + password + "]";
+    }
 }

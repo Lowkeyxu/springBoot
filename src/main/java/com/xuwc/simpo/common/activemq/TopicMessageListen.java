@@ -5,6 +5,7 @@
  */
 package com.xuwc.simpo.common.activemq;
 
+import com.xuwc.simpo.common.websocket.WebsocketController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,7 +32,13 @@ public class TopicMessageListen implements MessageListener {
         try {
 //            ObjectMessage tm = (ObjectMessage)(message);
             TextMessage tm = (TextMessage)(message);
-            logger.info("==========监听的数据为："+tm.getText());
+            //获取数据
+            String jsonStr = tm.getText();
+            logger.info("==========监听的数据为："+jsonStr);
+            if (jsonStr != null) {
+                //Client info = JSON.parseObject(jsonStr, Client.class);
+                WebsocketController.broadcast("user", "推送的消息为："+jsonStr);
+            }
         } catch (Exception e) {
             e.printStackTrace();
             logger.info("==========监听数据错误！");

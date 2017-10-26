@@ -99,7 +99,7 @@
         <dl>
             <dt>主题名称：</dt>
             <dd>
-                <input id="topicName" name="topicName" type="text" class="Simpo-input Simpo-input200 required" placeholder="请输入主题名称" />
+                <input id="topicName" name="topicName" type="text" class="Simpo-input Simpo-input200 required" placeholder="请输入主题名称" value="topic"/>
                 <a href="http://localhost:8161/admin/topics.jsp" target="_blank">查询</a>
             </dd>
         </dl>
@@ -112,6 +112,10 @@
         <label><input type="button" class="Edit-input  Edit-input-yellow" onclick="sendMsg()" value="发送" /></label>
     </div>
     <!-- 检索结束 -->
+    <div class="SIMPO_Table">
+        <table border="0" cellspacing="0" cellpadding="0" id="resultMQ">
+        </table>
+    </div>
 </form>
 </body>
 </html>
