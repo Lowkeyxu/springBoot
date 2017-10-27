@@ -69,7 +69,7 @@
     <!-- 监听方式，这种方式更实用，可以一直监听消息 -->
     <bean id="topicMessageListen" class="com.xuwc.simpo.common.activemq.TopicMessageListen"/>
 
-    <bean id="topicMessageListen2" class="com.xuwc.simpo.common.activemq.TopicMessageListen"/>
+    <bean id="topicMessageListen2" class="com.xuwc.simpo.common.activemq.TopicMessageListen2"/>
 
     <bean id="defaultMessageListenerContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
         <property name="connectionFactory" ref="connectionFactory"/>
@@ -81,7 +81,7 @@
         <property name="connectionFactory" ref="connectionFactory"/>
         <!-- 注册activemq名称 -->
         <property name="destination" ref="xwc"/>
-        <property name="messageListener" ref="topicMessageListen"/>
+        <property name="messageListener" ref="topicMessageListen2"/>
     </bean>
 
 

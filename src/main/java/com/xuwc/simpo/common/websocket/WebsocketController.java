@@ -46,6 +46,10 @@ public class WebsocketController {
      */
     @OnMessage
     public String onMessage(@PathParam("myWebsocket") String myWebsocket, String message) {
+        //心跳包测试返回空
+        if("HeartBeat".equals(message)){
+            return "";
+        }
         return "Got your message ("+ message +").Thanks !";
     }
 

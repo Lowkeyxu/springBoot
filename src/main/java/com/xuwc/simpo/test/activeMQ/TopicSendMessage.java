@@ -43,7 +43,7 @@ public class TopicSendMessage implements PushService{
      * @param topicName 队列名称
      * @param message 消息内容
      */
-    public void send(String topicName,final String message){
+    public void send(String topicName,String message){
         jmsTemplate.send(topicName,new MessageCreator() {
             @Override
             public Message createMessage(Session session) throws JMSException {

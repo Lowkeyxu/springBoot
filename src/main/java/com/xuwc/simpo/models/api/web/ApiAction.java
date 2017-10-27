@@ -9,6 +9,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.xuwc.simpo.common.cache.JedisUtils;
 import com.xuwc.simpo.common.utils.HttpClientUtil;
+import com.xuwc.simpo.common.utils.SimpoStringUtils;
 import com.xuwc.simpo.common.utils.UUIDGen;
 import com.xuwc.simpo.models.api.service.EmsService;
 import com.xuwc.simpo.models.api.vo.EmsVo;
@@ -89,7 +90,9 @@ public class ApiAction {
      * @param message 消息内容
      */
     @RequestMapping("/sendTopicMessage")
-    public void sendTopicMessage(String topicName,String message){
+    @ResponseBody
+    public int sendTopicMessage(String topicName,String message){
+        //FIXME 测试数据
         UserVo userVo = new UserVo();
         userVo.setId(UUIDGen.uuid());
         userVo.setLoginName(topicName);
@@ -110,6 +113,28 @@ public class ApiAction {
         topicSendMessage.send(topicName,message);
         //消息推送
         //topicSendMessage.push(userVo);
+        return 1;
+    }
+
+    //聊天室入口页面
+    @RequestMapping("chatRoom")
+    public String chat(ModelMap map){
+        map.put("userName", SimpoStringUtils.getChineseName());
+        return "module/api/chatroom";
+    }
+
+
+    /**
+     * 聊天信息
+     * @param topicName
+     * @param message
+     */
+    @RequestMapping("chat")
+    @ResponseBody
+    public int chat(String topicName,String message){
+        //消息发送
+        topicSendMessage.send(topicName,message);
+        return 1;
     }
 
 }
