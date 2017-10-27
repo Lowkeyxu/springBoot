@@ -1,5 +1,18 @@
 $(function(){
     initSocket("chat");
+
+    document.onkeydown = keyDownSearch;
+
+    function keyDownSearch(e) {
+        // 兼容FF和IE和Opera
+        var theEvent = e || window.event;
+        var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
+        if (code == 13) {
+            sendMsg();// 具体处理函数
+            return false;
+        }
+        return true;
+    }
 });
 
 
@@ -26,7 +39,6 @@ function initSocket(myWebsocket) {
 
     window.onbeforeunload = function () {
         //离开页面时的其他操作
-        alert("bye");
     };
 
     if (!window.WebSocket) {
@@ -48,12 +60,13 @@ function initSocket(myWebsocket) {
 
     // 收到服务端消息
     webSocket.onmessage = function (msg) {
-        var div =document.getElementById('xwc_div');
-        //var div = $("#xwc_div");
-        var _html = "";
-        _html+="<div class=\"last\" style='color: #666666;font-size: 16px;padding: 5px 0;'><span class=\"row1\" style='padding-left: 5px'>"+msg.data+"</span><span class=\"row1\" style='float:right;padding-right: 10px'>"+new Date().toLocaleString()+"</span></div>";
-        $(".xwc_div").append(_html);
-        div.scrollTop = div.scrollHeight;
+        if(msg.data != ""){
+            var div =document.getElementById('xwc_div');
+            var _html = "";
+            _html+="<div class=\"last\" style='color: #666666;font-size: 16px;padding: 5px 0;'><span class=\"row1\" style='padding-left: 5px'>"+msg.data+"</span><span class=\"row1\" style='float:right;padding-right: 10px'>"+new Date().toLocaleString()+"</span></div>";
+            $(".xwc_div").append(_html);
+            div.scrollTop = div.scrollHeight;
+        }
         //如果获取到消息，心跳检测重置
         //拿到任何消息都说明当前连接是正常的
         heartCheck.reset().start();
